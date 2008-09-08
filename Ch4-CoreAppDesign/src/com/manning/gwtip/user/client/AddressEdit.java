@@ -78,10 +78,10 @@ class AddressEdit extends FlexTable {
                     }
                 });
         address.addPropertyChangeListener(listeners[1]);
-        street1.addChangeListener(
+        street2.addChangeListener(
             new ChangeListener() {
                 public void onChange(Widget sender) {
-                    address.setStreet1(street1.getText());
+                    address.setStreet2(street2.getText());
                 }
             });
 
@@ -95,7 +95,7 @@ class AddressEdit extends FlexTable {
                     }
                 });
         address.addPropertyChangeListener(listeners[2]);
-        street1.addChangeListener(
+        city.addChangeListener(
             new ChangeListener() {
                 public void onChange(Widget sender) {
                     address.setCity(city.getText());
@@ -112,7 +112,7 @@ class AddressEdit extends FlexTable {
                     }
                 });
         address.addPropertyChangeListener(listeners[3]);
-        street1.addChangeListener(
+        postalCode.addChangeListener(
             new ChangeListener() {
                 public void onChange(Widget sender) {
                     address.setPostalCode(postalCode.getText());
